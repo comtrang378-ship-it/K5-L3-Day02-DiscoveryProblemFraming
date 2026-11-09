@@ -183,22 +183,38 @@ Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-Bài của nhóm nằm ở ô:
 
-Vì sao:
+**Vị trí: độ mơ hồ cao, độ phức tạp thấp–trung bình.** Cao 
+
+- **Độ mơ hồ cao:** narrative trong báo cáo tuần có thể được diễn đạt theo nhiều cách; không có một câu chữ duy nhất luôn đúng.
+- **Độ phức tạp thấp–trung bình:** dữ liệu đến từ 3 nguồn, nhưng các bước xử lý đã cố định và không có nhánh điều kiện đáng kể.
+- **Hàm ý:** dùng workflow có AI tại riêng bước soạn narrative; các bước lấy số liệu, duyệt và gửi vẫn theo quy trình xác định, có người kiểm tra trước khi gửi.
 
 ### 6.2. So sánh 4 mức
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | | | | |
-| **Rule** | | | | |
-| **Workflow** | | | | |
-| **Agent** | | | | |
+| **No AI** (sửa quy trình) | Dùng template và checklist; gửi báo cáo trước 9h | Leadership chỉ cần số liệu, không cần narrative | Không giảm thời gian viết narrative | Dùng khi team chỉ cần số |
+| **Rule** | Dashboard/script tự lấy số liệu và điền vào template | Tự động hóa bước lấy số liệu, điền mẫu | Không tạo được narrative | Dùng cho bước 1 |
+| **Workflow** | Rule lấy số → AI soạn nháp narrative → PM duyệt → gửi | Các bước cố định, AI chỉ hỗ trợ phần ngôn ngữ | Nháp có thể sai hoặc nhạt; cần PM duyệt | **Chọn** |
+| **Agent** | AI tự tìm nguồn, phân tích, hỏi thêm và gửi báo cáo | Chỉ phù hợp khi bước tiếp theo không thể xác định trước | Phạm vi và quyền truy cập quá rộng, khó kiểm soát | Không chọn |
 
-**Mức chọn:**
+**Mức chọn:** Workflow có AI ở bước soạn nháp narrative.
 
-**Vì sao không chọn mức đơn giản hơn:**
+**Vì sao không chọn mức đơn giản hơn:** Rule chỉ tự động lấy số và điền template, không giải quyết bottleneck viết narrative vốn có độ mơ hồ cao. No AI phù hợp nếu leadership chỉ cần số, nhưng không đáp ứng nhu cầu narrative của báo cáo tuần. Workflow giữ các bước có thể quy tắc hóa ở dạng Rule và giới hạn AI vào phần ngôn ngữ; PM duyệt trước khi gửi.
+
+### 6.2. So sánh 4 mức
+
+| Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
+|---|---|---|---|---|
+| **No AI** (sửa quy trình) | Dùng template và checklist; gửi báo cáo trước 9h | Leadership chỉ cần số liệu, không cần narrative | Không giảm thời gian viết narrative | Dùng khi team chỉ cần số |
+| **Rule** | Dashboard/script tự lấy số liệu và điền vào template | Tự động hóa bước lấy số liệu, điền mẫu | Không tạo được narrative | Dùng cho bước 1 |
+| **Workflow** | Rule lấy số → AI soạn nháp narrative → PM duyệt → gửi | Các bước cố định, AI chỉ hỗ trợ phần ngôn ngữ | Nháp có thể sai hoặc nhạt; cần PM duyệt | **Chọn** |
+| **Agent** | AI tự tìm nguồn, phân tích, hỏi thêm và gửi báo cáo | Chỉ phù hợp khi bước tiếp theo không thể xác định trước | Phạm vi và quyền truy cập quá rộng, khó kiểm soát | Không chọn |
+
+**Mức chọn:** Workflow có AI ở bước soạn nháp narrative.
+
+**Vì sao không chọn mức đơn giản hơn:** Rule chỉ tự động lấy số và điền template, không giải quyết bottleneck viết narrative vốn có độ mơ hồ cao. No AI phù hợp nếu leadership chỉ cần số, nhưng không đáp ứng nhu cầu narrative của báo cáo tuần. Workflow giữ các bước có thể quy tắc hóa ở dạng Rule và giới hạn AI vào phần ngôn ngữ; PM duyệt trước khi gửi.
 
 ### 6.3. AI Canvas rút gọn
 
